@@ -1,0 +1,376 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background/colors.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 170vh auto;
+  position: relative;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3.5vh;
+}
+
+p {
+  margin: 2vh 0;
+}
+
+.harry {
+  background-image: url("../images/background/harry.png");
+  color: #ffffff;
+}
+
+.starWars {
+  background-image: url("../images/background/starWars.jpg");
+  color: #ffffff;
+}
+
+.animals {
+  background-image: url("../images/background/animals.jpg");
+}
+
+.greeting {
+  width: 40vw;
+  padding: 5vw;
+  height: auto;
+  margin: 1vh auto;
+  text-align: center;
+  position: relative;
+}
+.greeting .ask-name {
+  margin: 2vh 0;
+}
+.greeting .ask-name .hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.greeting .ask-name .hello img {
+  margin: 0 1vw;
+}
+.greeting .ask-name p {
+  margin: 0;
+}
+.greeting .ask-name textarea {
+  resize: none;
+  width: 40vw;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 2vh;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.greeting .difficulty .chooseDifficulty {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.greeting .theme .chooseTheme {
+  display: flex;
+  justify-content: center;
+}
+.greeting .theme .btnThemes {
+  height: auto;
+  width: 20vw;
+}
+.greeting .play {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0;
+}
+.greeting .play #letsPlay {
+  margin: 0 1vw;
+}
+.greeting .required {
+  width: 30vw;
+  background-color: lightsalmon;
+  color: tomato;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 1vw;
+  margin: auto;
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.buttonDifficulty {
+  background: linear-gradient(to top right, #6600ff 0%, #ff0000 100%);
+  opacity: 0.8;
+  color: white;
+  font-size: 2vh;
+  border: none;
+  border-radius: 5px;
+  width: 40vw;
+  height: auto;
+  margin: 2px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.buttonDifficulty:hover {
+  background: linear-gradient(to top right, #07b8af 0%, #e62ecd 100%);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  color: #3fadd3;
+  font-size: 7vw;
+  text-align: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.uploadImages {
+  position: absolute;
+  top: 20vh;
+  right: 14vw;
+  width: 70vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: solid 1vw black;
+  border-radius: 10px;
+  background-color: #f9e9e0;
+  color: black;
+}
+
+.icons {
+  height: 4vh;
+  margin: 0.2vh 1vw;
+}
+
+.board {
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: solid 10px black;
+  border-radius: 10px;
+  background-color: rgba(249, 233, 224, 0.5);
+}
+.board .start-playing {
+  font-weight: bold;
+  text-align: center;
+  margin: 1vh 0vw;
+}
+.board .start-playing p {
+  margin: 0;
+  font-size: 10px;
+}
+.board .start-playing p .attemptsNumber {
+  color: #3fadd3;
+}
+.board .start-playing #helloName {
+  font-size: 13px;
+}
+.board .mainContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.board .mainContainer .imagesContainer {
+  display: grid;
+  grid-template-columns: 19vw 19vw 19vw;
+  grid-row-gap: 1vh;
+  grid-column-gap: 2vw;
+}
+.board .mainContainer .imagesContainer .oneImageContainer {
+  vertical-align: middle;
+  margin: 1vw;
+  width: 17vw;
+  height: 9.7vh;
+}
+.board .mainContainer .imagesContainer .oneImageContainer .images {
+  width: 100%;
+}
+.board .attempts {
+  border-radius: 10px;
+  border: solid 4px #3fadd3;
+  margin: 1vh auto;
+  width: 31vw;
+  text-align: center;
+}
+
+.oneImageContainer:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.gameOver {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(249, 233, 224, 0.5);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -4%;
+  align-items: center;
+  padding: 1vh 0vw;
+  color: #050505;
+}
+.gameOver .messageBox {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 65vw;
+  background-color: #f9e9e0;
+  text-align: center;
+}
+.gameOver .playAgain {
+  background: linear-gradient(to top right, #6600ff 0%, #ff0000 100%);
+  opacity: 0.8;
+  color: white;
+  font-size: 2vh;
+  border: none;
+  border-radius: 5px;
+  width: 40vw;
+  height: auto;
+  margin: 2px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.gameOver #ranking {
+  border: 2px solid black;
+  width: 50vw;
+  margin: 5vh auto;
+  font-size: 10px;
+}
+.gameOver #ranking .row {
+  display: flex;
+}
+.gameOver #ranking .row #rankingName {
+  width: 33%;
+}
+.gameOver #ranking .row #rankingLevel {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  width: 33%;
+}
+.gameOver #ranking .row #rankingAttempts {
+  width: 33%;
+}
+
+.backAndWithe {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.hidden {
+  display: none;
+}
+
+.flip {
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(720deg);
+}
+
+.clicked {
+  box-shadow: inset 0 0 8px #050505;
+  background: linear-gradient(to top right, #07b8af 0%, #e62ecd 100%);
+  opacity: 0.8;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-size: auto 75vw;
+  }
+
+  .greeting {
+    width: 50vw;
+    height: auto;
+    padding: 1vw;
+  }
+  .greeting .title {
+    margin: 10px;
+    font-size: 3vw;
+  }
+  .greeting .ask-name textarea {
+    width: 25vw;
+    height: 4.5vh;
+    font-size: 3vh;
+  }
+  .greeting .required {
+    font-size: 15px;
+  }
+
+  .board {
+    margin: 1vw 14vw 0vw 14vw;
+  }
+  .board .title {
+    font-size: 30px;
+  }
+  .board .start-playing p {
+    font-size: 12px;
+  }
+  .board .mainContainer {
+    margin: 2vh;
+  }
+  .board .mainContainer .imagesContainer {
+    grid-template-columns: 8.5vw 8.5vw 8.5vw 8.5vw;
+    grid-row-gap: 0.8vh;
+    grid-column-gap: 1.3vh;
+  }
+  .board .mainContainer .imagesContainer .oneImageContainer {
+    width: 95%;
+    height: 95%;
+    margin: 0;
+  }
+  .board .attempts {
+    margin: 2vh auto;
+  }
+  .board .attempts p {
+    margin: 1vh;
+  }
+
+  .gameOver .messageBox {
+    width: 30vw;
+    margin: 1.5vh;
+  }
+  .gameOver .playAgain {
+    width: 25vw;
+    margin: auto;
+  }
+  .gameOver #ranking {
+    width: 22vw;
+    margin: 5vh auto;
+  }
+
+  .buttonDifficulty {
+    width: auto;
+    min-width: 15vw;
+  }
+
+  .icons {
+    height: 8vh;
+  }
+
+  .greeting .difficulty .chooseDifficulty {
+    flex-direction: row;
+  }
+
+  .animalsM {
+    display: none;
+  }
+
+  .animalsD {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
