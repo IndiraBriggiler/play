@@ -16,6 +16,9 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
+app.use(express.static(__dirname + '/public'));
+
+
 var Storage = multer.diskStorage({
   destination: function(req, file, callback) {
       callback(null, './images');
