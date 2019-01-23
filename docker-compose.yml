@@ -1,0 +1,9 @@
+version: '3'
+services:
+  indira-api:
+    build: .
+    container_name: indira-api
+    volumes:
+    - .:/app
+    ports:
+    - "3000:3000"
