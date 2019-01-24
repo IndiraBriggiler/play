@@ -15,7 +15,7 @@ var harry = ['images/harry/dobby.jpg', 'images/harry/dumbledore.jpg', 'images/ha
 var animals = ['images/animals/alce.jpg', 'images/animals/epelante.jpg', 'images/animals/nena.jpg', 'images/animals/peces.jpg', 'images/animals/unichancho.jpg', 'images/animals/zapas.jpg', 'images/animals/alce.jpg', 'images/animals/epelante.jpg', 'images/animals/nena.jpg', 'images/animals/peces.jpg', 'images/animals/unichancho.jpg', 'images/animals/zapas.jpg'];
 var starWars = ['images/starWars/chewbacca.jpeg', 'images/starWars/darth.jpg', 'images/starWars/princess.jpeg', 'images/starWars/r2d2.jpg', 'images/starWars/team.jpeg', 'images/starWars/yoda.jpg', 'images/starWars/chewbacca.jpeg', 'images/starWars/darth.jpg', 'images/starWars/princess.jpeg', 'images/starWars/r2d2.jpg', 'images/starWars/team.jpeg', 'images/starWars/yoda.jpg'];
 var yourTheme = [];
-var url = "http://localhost:3000/";
+var url = "http://indirabriggiler.com/memotest/";
 let expert = $('#expert');
 let medium = $('#medium');
 let easy = $('#easy');
@@ -323,7 +323,7 @@ play();
 //RANKING
 
 function ranking () {  
-  $.ajax('http://localhost:3000/ranking' + '?level=' + level).done(function(data) {
+  $.ajax('http://indirabriggiler.com/memotest/ranking' + '?level=' + level).done(function(data) {
   console.log(data)
   for (i = 0; i < data.length; i++) {
     $('#ranking').append(`
@@ -344,7 +344,7 @@ function ranking () {
 }
 
 function winnerRanking () {
-  $.post('http://localhost:3000/newScore', { player: name, playerLevel: level, playerAttempts: totalClicks});
+  $.post('http://indirabriggiler.com/memotest/newScore', { player: name, playerLevel: level, playerAttempts: totalClicks});
 
 }
 
